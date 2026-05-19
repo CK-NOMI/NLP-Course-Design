@@ -74,7 +74,8 @@ python scripts/evaluate.py \
 ### 当前进度
 
 - TextCNN 基线已完成（Dev best F1=0.9168, Test Acc=0.9117, Test F1=0.9116）
-- BiLSTM / BERT / MacBERT 后续阶段实现
+- BiLSTM smoke test 已通过（train=512, dev=128, test=128, epochs=1，仅验证代码闭环，未跑完整训练）
+- BERT / MacBERT 后续阶段实现
 
 ## 当前已完成模块
 

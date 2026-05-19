@@ -19,6 +19,7 @@ from src.utils.io_utils import ensure_dir
 from src.data.vocab import CharVocab
 from src.data.dataset import CharDataset
 from src.models.textcnn import TextCNN
+from src.models.bilstm import BiLSTM
 from src.evaluation.metrics import compute_metrics
 
 logger = get_logger("evaluate")
@@ -31,11 +32,12 @@ def load_config(config_path: str) -> dict:
 
 def main():
     parser = argparse.ArgumentParser(description="评估模型")
-    parser.add_argument("--model", type=str, required=True, choices=["textcnn"])
+    parser.add_argument("--model", type=str, required=True, choices=["textcnn", "bilstm"])
     parser.add_argument("--config", type=str, required=True)
     parser.add_argument("--checkpoint", type=str, required=True)
     parser.add_argument("--test_file", type=str, required=True)
     parser.add_argument("--output", type=str, required=True)
+    parser.add_argument("--max_test_samples", type=int, default=None)
     args = parser.parse_args()
 
     config = load_config(args.config)
@@ -50,7 +52,7 @@ def main():
 
     # === Dataset ===
     max_len = data_cfg["max_len"]
-    test_ds = CharDataset(args.test_file, vocab, max_len)
+    test_ds = CharDataset(args.test_file, vocab, max_len, max_samples=args.max_test_samples)
     test_loader = DataLoader(test_ds, batch_size=config["training"]["batch_size"], shuffle=False)
     logger.info(f"测试集: {len(test_ds)} 条")
 
@@ -63,6 +65,16 @@ def main():
             kernel_sizes=model_cfg["kernel_sizes"],
             dropout=model_cfg["dropout"],
             num_classes=model_cfg["num_classes"],
+        )
+    elif args.model == "bilstm":
+        model = BiLSTM(
+            vocab_size=len(vocab),
+            embed_dim=model_cfg["embed_dim"],
+            hidden_dim=model_cfg["hidden_dim"],
+            num_layers=model_cfg["num_layers"],
+            dropout=model_cfg["dropout"],
+            num_classes=model_cfg["num_classes"],
+            bidirectional=model_cfg.get("bidirectional", True),
         )
     else:
         raise ValueError(f"不支持的模型: {args.model}")

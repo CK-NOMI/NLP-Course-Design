@@ -12,8 +12,10 @@ class CharDataset(Dataset):
     读取 CSV (id, text, label)，输出 input_ids / label / sample_id / text。
     """
 
-    def __init__(self, csv_file: str, vocab: CharVocab, max_len: int = 256):
+    def __init__(self, csv_file: str, vocab: CharVocab, max_len: int = 256, max_samples: int = None):
         self.df = pd.read_csv(csv_file)
+        if max_samples is not None:
+            self.df = self.df.head(max_samples).reset_index(drop=True)
         self.vocab = vocab
         self.max_len = max_len
 
