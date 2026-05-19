@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 虚拟环境
+.venv/
+venv/
+.env
+
+# 实验输出（模型权重、日志、预测结果）
+outputs/
+
+# 原始数据和增强数据（processed 保留以便复现）
+data/raw/
+data/augmented/
+data/hard_eval/
+
+# 模型权重文件
+*.pt
+*.pth
+*.bin
+*.npy
+
+# 日志
+*.log
+
+# 系统文件
+.DS_Store
+
+# IDE
+.idea/
+.vscode/

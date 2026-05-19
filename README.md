@@ -39,6 +39,8 @@ python scripts/preprocess.py
 
 每个文件包含字段：`id, text, label`
 
+> **数据规模说明：** ChnSentiCorp 官方原始划分约为 train=9600、dev=1200、test=1200。本项目预处理阶段会进行空文本清理和重复文本删除，因此当前清洗后的实际样本数为：train=8249，dev=1178，test=1178。后续所有基线训练、增强训练和蒸馏实验均基于 `data/processed/` 下的清洗版本进行。
+
 ## 当前已完成模块
 
 | 模块 | 路径 | 说明 |
