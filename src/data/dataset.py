@@ -1,0 +1,36 @@
+"""数据集模块：字级输入 Dataset（供 TextCNN / BiLSTM 使用）"""
+import pandas as pd
+import torch
+from torch.utils.data import Dataset
+
+from src.data.vocab import CharVocab
+
+
+class CharDataset(Dataset):
+    """字级分类数据集。
+
+    读取 CSV (id, text, label)，输出 input_ids / label / sample_id / text。
+    """
+
+    def __init__(self, csv_file: str, vocab: CharVocab, max_len: int = 256):
+        self.df = pd.read_csv(csv_file)
+        self.vocab = vocab
+        self.max_len = max_len
+
+    def __len__(self):
+        return len(self.df)
+
+    def __getitem__(self, idx):
+        row = self.df.iloc[idx]
+        text = str(row["text"]) if pd.notna(row["text"]) else ""
+        label = int(row["label"])
+        sample_id = int(row["id"])
+
+        input_ids = self.vocab.text_to_ids(text, self.max_len)
+
+        return {
+            "input_ids": torch.tensor(input_ids, dtype=torch.long),
+            "label": torch.tensor(label, dtype=torch.long),
+            "sample_id": sample_id,
+            "text": text,
+        }

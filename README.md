@@ -41,6 +41,41 @@ python scripts/preprocess.py
 
 > **数据规模说明：** ChnSentiCorp 官方原始划分约为 train=9600、dev=1200、test=1200。本项目预处理阶段会进行空文本清理和重复文本删除，因此当前清洗后的实际样本数为：train=8249，dev=1178，test=1178。后续所有基线训练、增强训练和蒸馏实验均基于 `data/processed/` 下的清洗版本进行。
 
+## 第二阶段：TextCNN 基线训练
+
+### 训练
+
+```bash
+python scripts/train.py --model textcnn --config configs/textcnn.yaml --exp_name textcnn_baseline
+```
+
+### 评估
+
+```bash
+python scripts/evaluate.py \
+    --model textcnn \
+    --config configs/textcnn.yaml \
+    --checkpoint outputs/checkpoints/textcnn_baseline/best.pt \
+    --test_file data/processed/test.csv \
+    --output outputs/predictions/textcnn_test_predictions.csv
+```
+
+### 输出文件
+
+| 文件 | 说明 |
+|---|---|
+| `outputs/vocab/char_vocab.json` | 字级词表 |
+| `outputs/checkpoints/textcnn_baseline/best.pt` | 最优模型权重 |
+| `outputs/logs/textcnn_baseline/train_log.jsonl` | 训练日志 |
+| `outputs/logs/textcnn_baseline/config.yaml` | 配置快照 |
+| `outputs/metrics/textcnn_test_metrics.json` | 测试集指标 |
+| `outputs/predictions/textcnn_test_predictions.csv` | 逐条预测结果 |
+
+### 当前进度
+
+- TextCNN 基线已完成（Dev best F1=0.9168, Test Acc=0.9117, Test F1=0.9116）
+- BiLSTM / BERT / MacBERT 后续阶段实现
+
 ## 当前已完成模块
 
 | 模块 | 路径 | 说明 |
@@ -53,6 +88,13 @@ python scripts/preprocess.py
 | 数据下载 | `scripts/download_data.py` | 从 HuggingFace 下载 ChnSentiCorp |
 | 数据预处理 | `scripts/preprocess.py` | 清洗、去重、格式统一 |
 | 基础配置 | `configs/base.yaml` | seed/路径/超参数默认值 |
+| 字表构建 | `src/data/vocab.py` | 字级 char2id，支持保存/加载 |
+| 数据集 | `src/data/dataset.py` | CharDataset，字级输入 |
+| TextCNN | `src/models/textcnn.py` | 多核卷积文本分类模型 |
+| 训练器 | `src/training/trainer.py` | 通用 Trainer，early stopping |
+| 训练脚本 | `scripts/train.py` | 统一训练入口 |
+| 评估脚本 | `scripts/evaluate.py` | 统一评估 + 预测输出 |
+| TextCNN配置 | `configs/textcnn.yaml` | TextCNN 超参数 |
 
 ## 项目目录
 
