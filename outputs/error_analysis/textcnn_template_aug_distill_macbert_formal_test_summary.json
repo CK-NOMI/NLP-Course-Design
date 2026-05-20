@@ -1,0 +1,15 @@
+{
+  "model_name": "textcnn_template_aug_distill_macbert_formal_test",
+  "total_samples": 1178,
+  "error_samples": 111,
+  "accuracy": 0.9058,
+  "error_rate": 0.0942,
+  "type_distribution": {
+    "transition": 31,
+    "other": 28,
+    "negation": 28,
+    "degree": 12,
+    "colloquial": 10,
+    "implicit": 2
+  }
+}

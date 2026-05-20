@@ -1,0 +1,1090 @@
+source_id,label,hard_type,error_type,error,raw_response_preview,prompt_preview
+42,0,colloquial,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='8cb6f637219f402b94d0519da996f95e', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对给定的中文评论进行改写，改为更口语化、网络化的表达风格。情感极性必须保持为【负向】，并且可以使用语气词和网络用语，保持自然中文。\n\n原文是：“这样的男人，温柔的过了头，找不到一丝男人的气概。只会说：这是好的。。。这也是好的。。。无法欣赏这样的文笔优美在何处。爱情也是奇怪，张爱玲",,"请对以下中文评论进行改写，改为更口语化、网络化的表达风格。
+要求：改写后情感极性保持为【负向】，可用语气词、网络用语，保持自然中文。
+
+原文：这样的男人，温柔的过了头，找不到一丝男人的气概。只会说：这是好的。。。这也是好的。。。无法欣赏这样的文笔优美在何处。爱情也是奇怪，张爱玲爱上了这样的一个人，隐隐地，大概是一辈子的影子。
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+21,1,degree,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='f1e985b35e3f431f9bf41e5724267614', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写。改写的要求是：情感极性保持为【正向】，但通过程度词变化增加模糊性，使判断难度增加。同时，保持自然中文。\n\n原文是：\n“这次入住少林宾馆还是比较满意的,宾馆的位置比较好找,从客运站打部计程车只要三几分钟,5块钱就可以到了,房间比较干净,算是比较宽敞的,洗澡",,"请对以下中文评论进行改写，调整程度表达使判断难度增加。
+要求：改写后情感极性保持为【正向】，通过程度词变化增加模糊性，保持自然中文。
+
+原文：这次入住少林宾馆还是比较满意的,宾馆的位置比较好找,从客运站打部计程车只要三几分钟,5块钱就可以到了,房间比较干净,算是比较宽敞的,洗澡的热水也挺舒服,最好的地方是宾馆外面有一条很旺的小吃街,晚上6点左右就开了,很多麻辣烫之类的小吃,而且有起码二三十档,选择很多,解决吃的问题很方便,而且价格也相当评议,我和我朋友一起,两个人十来块钱就吃得好饱了:)
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+32,1,degree,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='821fffa01cc64bfd8ec970ede649118a', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，任务是改写给定的中文评论，调整程度表达使判断难度增加。要求是保持情感极性为【正向】，通过程度词变化增加模糊性，保持自然中文。\n\n原文是：\n“原本在网上订了两个套房，入住后，携程还给我打电话问是否只入住了一间，要扣我信用卡里的钱。真不知道酒店与携程是如何衔接的？ 宾馆反馈 2007年12月",,"请对以下中文评论进行改写，调整程度表达使判断难度增加。
+要求：改写后情感极性保持为【正向】，通过程度词变化增加模糊性，保持自然中文。
+
+原文：原本在网上订了两个套房，入住后，携程还给我打电话问是否只入住了一间，要扣我信用卡里的钱。真不知道酒店与携程是如何衔接的？ 宾馆反馈 2007年12月7日 ： 我们非常感谢您的留言，非常抱歉由于一些小误会给您带来的困惑。根据我们的担保订房要求，对于确认担保的房间未入住的会收取当天房费。当然，我们也会进一步加强与携程的沟通与协调，让您今后的入住感觉更加舒适与愉快。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+70,0,degree,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='5d9032b9591c476ab572a6b2726cab85', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写。原文是负向情感的，我需要保持情感极性为负向。改写要通过程度词的变化来增加模糊性，使判断难度增加。同时，保持自然中文。\n\n原文内容：\n- 于丹每天讲如何学习孔子、庄子，如何有心得（中学作文：读后感）。很多东西非常牵强，让人不可理解。\n- 于丹开口闭口讲不",,"请对以下中文评论进行改写，调整程度表达使判断难度增加。
+要求：改写后情感极性保持为【负向】，通过程度词变化增加模糊性，保持自然中文。
+
+原文：于丹每天讲如何如何学习孔子、庄子，如何有心得（中学作文：读后感）。很多东西非常牵强，让人不可理解。于丹开口闭口讲不为功不为利，可为什么招摇过市，搞了那么多炒作活动！说到底，为了什么呢---名利。天下熙熙，皆为利来；天下攘攘，皆为利往。于丹真是活学活用的楷模！
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+77,1,degree,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='eff2296888944e308d2c38fadcf6cfba', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，任务是改写给定的中文评论，调整程度表达，使判断难度增加。这意味着我需要通过改变程度词来增加模糊性，但保持情感极性为正向。情感标签已经是正向，所以改写后必须仍然传达积极的态度。\n\n原文：刚拿到这套书。每本书都很薄，丰富的图画，简单的句子，每本书都是通过替换简单的单词来重复同样的句型，这种方式",,"请对以下中文评论进行改写，调整程度表达使判断难度增加。
+要求：改写后情感极性保持为【正向】，通过程度词变化增加模糊性，保持自然中文。
+
+原文：刚拿到这套书。每本书都很薄，丰富的图画，简单的句子，每本书都是通过替换简单的单词来重复同样的句型，这种方式来学习，应该不辛苦！CD的歌曲很有意思，就是第一课中的一段音乐太长了点，弄得你莫名其妙。孩子7岁了，上一年级，学了有四年英语，在幼儿园学的。培养了语感，但单词都没好好记过。通过这套书，应该能够让他好好记记单词。就是价钱太贵了，都是影印的，一套就要127元多。能便宜些才符合中国国情。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+79,0,degree,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='ccddc2688c8c46059d34f4b77e3fd025', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对提供的中文评论进行改写。原文有两个部分：\n\n1. 作为便携本，重了一点，厚了一些\n\n2. 屏幕确实太小了，上网本还是应该做12寸的。\n\n情感标签是负向，我需要保持情感极性为负向。\n\n改写的要求是：通过程度词变化增加模糊性，使判断难度增加。也就是说，要调整程度表达，让",,"请对以下中文评论进行改写，调整程度表达使判断难度增加。
+要求：改写后情感极性保持为【负向】，通过程度词变化增加模糊性，保持自然中文。
+
+原文：1、作为便携本，重了一点，厚了一些 2、屏幕确实太小了，上网本还是应该做12寸的。
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+100,0,degree,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='16e6d55c2f3a4dbbbc600ea9195baf6c', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对中文评论进行改写，调整程度表达使判断难度增加。改写后的情感极性保持为负向，通过程度词变化增加模糊性，保持自然中文。\n\n原文是：四星级酒店，符合标准的地方我就不提了，有以下缺点： 1.标间不提供免费瓶装水（吧台内的瓶装水8元一瓶） 2.距离市区远，根本无法打到车，且不提供叫车服务",,"请对以下中文评论进行改写，调整程度表达使判断难度增加。
+要求：改写后情感极性保持为【负向】，通过程度词变化增加模糊性，保持自然中文。
+
+原文：四星级酒店，符合标准的地方我就不提了，有以下缺点： 1.标间不提供免费瓶装水（吧台内的瓶装水8元一瓶） 2.距离市区远，根本无法打到车，且不提供叫车服务 3.其它餐不知，早餐巨差 免费注册 网站导航 宾馆索引 服务说明 关于携程 诚聘英才 代理合作
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+108,1,degree,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='39a5e458f7e64e93836bb75cef4514e6', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对中文评论进行改写。情感标签是【正向】，所以改写后的情感极性必须保持为正向。\n\n原文是：\n“看完这本书，不，应该是看完这封信，觉得这样比较适合，因为它比较短，给人感觉自己应该在年轻时急切的去追寻自己的梦想，只要你是非常非常非常想要得到的，就得去追寻，去努力，哪怕受到一些的不公平、",,"请对以下中文评论进行改写，调整程度表达使判断难度增加。
+要求：改写后情感极性保持为【正向】，通过程度词变化增加模糊性，保持自然中文。
+
+原文：看完这本书，不，应该是看完这封信，觉得这样比较适合，因为它比较短，给人感觉自己应该在年轻时急切的去追寻自己的梦想，只要你是非常非常非常想要得到的，就得去追寻，去努力，哪怕受到一些的不公平、哪怕看起来有些不合乎常理的（诗人去学经济），那些不公平在今后看来都是微不足道的、那些不合乎常理的事情其实是可以做到的，甚至做的很好的。希望作者能写些更详细的东西给年轻人，那就更好了，我期待！
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+121,1,degree,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='8a8308049b5d43a5bc4480ed4941e876', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，任务是改写给定的中文评论，调整程度表达使判断难度增加。改写后情感极性保持为【正向】，通过程度词变化增加模糊性，保持自然中文。\n\n原文内容：\n\n- 崔雅的感性和生活体验与肯的理性与理论思考完美地结合，给我们展示了一段真实而艰难的病痛生活之外，他们的内心的艰难与美丽。陆陆续续读过这本书不下",,"请对以下中文评论进行改写，调整程度表达使判断难度增加。
+要求：改写后情感极性保持为【正向】，通过程度词变化增加模糊性，保持自然中文。
+
+原文：崔雅的感性和生活体验与肯的理性与理论思考完美地结合，给我们展示了一段真实而艰难的病痛生活之外，他们的内心的艰难与美丽。陆陆续续读过这本书不下3遍，在我开始学习内观禅修之前、之后，都不断地找时间来读这一本书，它揭示了这两个人在理性、心理和灵性的不同层面上的非常深刻的体验和发现，以及不断地自我的解脱和成长。我深受启发，深受感动。推荐给所有的朋友。愿我们在生命的磨砺中成长，解脱。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+172,1,degree,ParseError,Failed to parse aug_text,"{""","请对以下中文评论进行改写，调整程度表达使判断难度增加。
+要求：改写后情感极性保持为【正向】，通过程度词变化增加模糊性，保持自然中文。
+
+原文：宾馆在小街道上，不大好找，但还好北京热心同胞很多~ 宾馆设施跟介绍的差不多，房间很小，确实挺小，但加上低价位因素，还是无超所值的； 环境不错，就在小胡同内，安静整洁，暖气好足-_-||。。。呵 还有一大优势就是从宾馆出发，步行不到十分钟就可以到梅兰芳故居等等，京味小胡同，北海距离好近呢。 总之，不错。 推荐给节约消费的自助游朋友~比较划算，附近特色小吃很多~
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+174,1,degree,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='d4eed98e0be447ebaa7e3f7379742786', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对给定的中文评论进行改写。原文是关于西夏研究的书籍评论，情感极性是正向。我需要调整程度表达，使判断难度增加，但保持情感极性为正向。通过程度词变化增加模糊性，保持自然中文。\n\n关键要求：\n- 改写后情感极性保持为正向。\n- 通过程度词变化增加模糊性，意思是调整表达的强度，让判断",,"请对以下中文评论进行改写，调整程度表达使判断难度增加。
+要求：改写后情感极性保持为【正向】，通过程度词变化增加模糊性，保持自然中文。
+
+原文：西夏的狂热追随者必备，可以作为工具书来用，很不错，毕竟在对西夏的研究方面，俄罗斯有太多的资料和实物，绝大多数东西我们不能在国内看到，对比国内研究文献参照阅读很有收获！书目系统清晰，资料翔实，查找使用都很方便……我最喜欢的是最后相当大量的西夏文字，基本是可以当作一本夏汉互译小词典来用，这点上感觉非常超值！毕竟当年的那本《夏汉字典》要1000块钱，现在还买不到了！！！
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+193,1,degree,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='6457dd18ccf94675bd553cc90db2ffe3', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对给定的中文评论进行改写。改写的重点是调整程度表达，使判断难度增加。这意味着我需要通过改变程度词来增加模糊性，让情感判断不那么明确，但情感极性必须保持为正向。同时，改写后的文本必须是自然流畅的中文。\n\n原文是：""每每阅读此书，我都怀着一种激荡和惊叹的心情，以至于我长时间沉浸在思考",,"请对以下中文评论进行改写，调整程度表达使判断难度增加。
+要求：改写后情感极性保持为【正向】，通过程度词变化增加模糊性，保持自然中文。
+
+原文：每每阅读此书，我都怀着一种激荡和惊叹的心情，以至于我长时间沉浸在思考和回味中，久久不能平静。中国的三十年，改变简直天翻地覆，其中太多太多的悲痛、感怀、激荡……吴晓波作者的知识储备、文化底蕴以及看待事务的高度和真实准确的文字叙述，更给中国三十年来的历史回顾增色不少。此书非常值得一看。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+194,0,degree,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='63a6998150a34b91837b2f2725bf984d', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对给定的中文评论进行改写。原文是一个酒店评论，表达了强烈的负面情感，描述了酒店的各种问题，如噪音、隔音差、装修俗气、空调声音响。然后有酒店的反馈，但情感标签是负向，所以我需要聚焦于评论部分，而不是反馈。\n\n要求是：\n- 改写后情感极性保持为【负向】，意思是情感还是负面的。\n-",,"请对以下中文评论进行改写，调整程度表达使判断难度增加。
+要求：改写后情感极性保持为【负向】，通过程度词变化增加模糊性，保持自然中文。
+
+原文：这酒店太烂了，左、右及后边是3个大型的娱乐场所，吵闹声一直到凌晨3点多，酒店隔音很差。房间装修很俗，中央空调声音很响。 宾馆反馈 2008年7月15日 ： 尊贵的客人，谢谢您对本酒店提出宝贵的意见。我们非常地抱歉在您入住本酒店期间给您带来的不便,对于您提出空调响的问题,我们酒店管理层非常重视,马上找专业人员改善空调的问题，今后我们将不断改进我们的不足,为您及所有宾客提供更优质服务,再次感谢您,并期待您的下次光临,谢谢!
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+231,1,degree,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='457f378352374e7da66707db099f65bd', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对给定的中文评论进行改写。原文是正向情感的，我需要保持情感极性为正向。改写后，通过程度词的变化增加模糊性，使判断难度增加。也就是说，让情感表达不那么直接或强烈，增加一些不确定性，但整体还是正向。\n\n原文：""这本书有别于以往看过的早教书籍，结合了说明文的写实，散文的情致和图册的一目",,"请对以下中文评论进行改写，调整程度表达使判断难度增加。
+要求：改写后情感极性保持为【正向】，通过程度词变化增加模糊性，保持自然中文。
+
+原文：这本书有别于以往看过的早教书籍，结合了说明文的写实，散文的情致和图册的一目了然。特别是读过几页后，会觉得这是一本放不下的书本。书中描述了很多常见的生活状态，以及各种状态下与子女沟通融洽的方式。未详尽处及由文本内容而延伸出的疑虑，在后文也有提及。给人感觉是一本智慧的书，了解家长的书。非常喜欢！
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+241,1,degree,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='ff516e0966eb4667963a76783d4e221a', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写。改写的目标是调整程度表达，使判断难度增加，同时保持情感极性为正向。这意味着我需要通过改变程度词来引入更多的模糊性，但整体上仍然保持积极的情感。\n\n原文有四条评论：\n1. 纯黑键盘，棕色外面板，银色边框，耐看，做工也不错！~\n2. 奔双4200，速度快，",,"请对以下中文评论进行改写，调整程度表达使判断难度增加。
+要求：改写后情感极性保持为【正向】，通过程度词变化增加模糊性，保持自然中文。
+
+原文：1.纯黑键盘，棕色外面板，银色边框，耐看，做工也不错！~ 2.奔双4200，速度快，显卡也还可以，能应付主流游戏，LED的屏幕相当不错，显示效果好，亮度高，16：9的新宽屏幕还有点不习惯，要几天适应！ 3.发货速度很快，我是24号下午付款的，收款确认后不到2个小时就发货完毕，效率高，这一点值得表扬！ 4，客服很耐心，银行转账速度太慢，我很着急，他耐心的给我解释！直到收款确认，谢谢那位同志。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+256,1,degree,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='961966cec7bf49978cee54fbafec670a', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写。原文是：""ThinkPad的品牌，相当的值得购买；轻薄、性能优越；送货相当快啊，晚上10点下单，第二天下午3点就到了，京东的服务还是不错的，表扬一下。"" 情感标签是正向。\n\n改写的要求：\n- 情感极性保持为正向。\n- 通过程度词变化增加模糊性，使判断难",,"请对以下中文评论进行改写，调整程度表达使判断难度增加。
+要求：改写后情感极性保持为【正向】，通过程度词变化增加模糊性，保持自然中文。
+
+原文：ThinkPad的品牌，相当的值得购买；轻薄、性能优越；送货相当快啊，晚上10点下单，第二天下午3点就到了，京东的服务还是不错的，表扬一下。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+260,0,degree,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='43c6cf713f5f475992104ededb9e1b39', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户的指令是：对给定的中文评论进行改写，调整程度表达使判断难度增加。要求改写后情感极性保持为【负向】，通过程度词变化增加模糊性，保持自然中文。\n\n原文是：""刚刚从事工作1年多，看完这本书真切的感受到了工作中好多不明白的事情，也更加坚定了自己心中的信念，很不错的一本书！""\n\n情感标签是：",,"请对以下中文评论进行改写，调整程度表达使判断难度增加。
+要求：改写后情感极性保持为【负向】，通过程度词变化增加模糊性，保持自然中文。
+
+原文：刚刚从事工作1年多，看完这本书真切的感受到了工作中好多不明白的事情，也更加坚定了自己心中的信念，很不错的一本书！
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+2,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='44d05b76c9e34bbd96b01156d790fc3f', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对一个中文评论进行改写。原文是：""还稍微重了点，可能是硬盘大的原故，还要再轻半斤就好了。其他要进一步验证。贴的几种膜气泡较多，用不了多久就要更换了，屏幕膜稍好点，但比没有要强多了。建议配赠几张膜让用用户自己贴。""\n\n情感标签是负向，所以我需要保持情感极性为负向。\n\n关键要求：",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：还稍微重了点，可能是硬盘大的原故，还要再轻半斤就好了。其他要进一步验证。贴的几种膜气泡较多，用不了多久就要更换了，屏幕膜稍好点，但比没有要强多了。建议配赠几张膜让用用户自己贴。
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+6,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='170bb2c02bb34e38b4a0790c715d8044', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写，加入否定表达使语义更复杂。情感极性必须保持为负向，长度不超过原文1.5倍，保持自然中文。\n\n原文：""前台接待太差，酒店有A B楼之分，本人check－in后，前台未告诉B楼在何处，并且B楼无明显指示；房间太小，根本不像4星级设施，下次不会再选择入住此店啦。",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：前台接待太差，酒店有A B楼之分，本人check－in后，前台未告诉B楼在何处，并且B楼无明显指示；房间太小，根本不像4星级设施，下次不会再选择入住此店啦。
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+14,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='c11768e97455425a8bbee9e01320716b', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对给定的中文评论进行改写。原文是关于一个设备的评论，描述了缺少功能（蓝牙、摄像头、麦克风）、安装操作系统时的麻烦（没有SATA驱动）、以及驱动问题（无线网卡驱动不能用）。\n\n要求：\n1. 加入否定表达使语义更复杂。\n2. 改写后情感极性保持为【负向】。\n3. 长度不超过原文",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：没有蓝牙、摄像头，连麦克风都省了 装XP有点小麻烦，MSDN原版没有SATA驱动无法安装，装雨林木风GHOST纯净版OK。 自带无线网卡驱动不能用，需到官网下载。
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+19,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='4e812c0eded34987838df52327f39e5f', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对给定的中文评论进行改写，加入否定表达使语义更复杂。改写后情感极性必须保持为负向，长度不超过原文的1.5倍，并保持自然中文。\n\n原文是一段负向情感的评论，讲述了一个不愉快的酒店入住经历，包括服务不一致、设备旧、沟通问题等。\n\n关键点是：加入否定表达。否定表达可能意味着添加否定",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：我在晚上6点30左右入住的,当时是一位男服务员为我登记,我问他可不可以作信用卡预授权，他说不可以但建议我可以用现金作为押金到退房时可以用信用卡消费．房间很大但很旧，电视机只能收到４个台的节目，在第三天我退房时要求用信用卡消费，当时一位女服务员说我之前是用现金作为押金是不可以再用信用卡消费的，还反问我说如果我要消费的话在入住时为什么不做预授权，当时我就把之前那位男服务员说的话跟他说一次后又反口说是因为现在机器坏了不能用，我跟她说我在３０分钟之前见到有一位客人才用信用卡消费过，为什么会这么快就坏了，她见我态度那么强硬就帮我用卡消费了，事实上证明了刷卡机并没有坏，当时因为我们赶着到机场坐飞机就没有再跟她理论了，但一直觉得心中有气．
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+26,1,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='5f0fff90b2b44e569eb04d1e3e556341', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对中文评论进行改写，加入否定表达使语义更复杂。改写后的情感极性必须保持为正向，长度不超过原文的1.5倍，保持自然中文。\n\n原文： ""简单，大方，在同类尺寸的款型的笔记本中不显厚重，轻薄感！很安静，几乎没有声音，音质不错屏幕不错，显的细腻可观。 感谢马连道提货点的工作人员（前台客服",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【正向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：简单，大方，在同类尺寸的款型的笔记本中不显厚重，轻薄感！很安静，几乎没有声音，音质不错屏幕不错，显的细腻可观。 感谢马连道提货点的工作人员（前台客服），服务态度超好，值得贵公司其他员工学习。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+28,1,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='944f0170dc444d2997af75e7830374ff', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写。原文是：“没发现什么优点，回来了开机什么都没有，有自己装的XP也没费什么劲，麦有些问题。对方听不清。调了好久才好了，整体还不错”。情感标签是“正向”，意思是改写后的文本必须保持正向情感。\n\n用户指定了严格要求：\n\n- 只输出一个JSON对象，不要输出任",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【正向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：没发现什么优点，回来了开机什么都没有，有自己装的XP也没费什么劲，麦有些问题。对方听不清。调了好久才好了，整体还不错
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+29,1,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='09e53db1e417445a93e6147bd50ab616', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写，加入否定表达使语义更复杂。改写后情感极性必须保持为正向，长度不超过原文的1.5倍，并保持自然中文。\n\n原文：""外观漂亮，系统不是很难弄，刚开始看了很多评价说难弄，实际上没那么困难，将boot 选项第一选项选从DVD起动，其它就直接安装了。我的是安装盘，不是",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【正向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：外观漂亮，系统不是很难弄，刚开始看了很多评价说难弄，实际上没那么困难，将boot 选项第一选项选从DVD起动，其它就直接安装了。我的是安装盘，不是Ghost的。内存是三星DDR3-1066，不是DDR3-800.Everest测试是DDR3-800.我用超级兔子测试是DDR3-1066.友达LED屏，独显，满意，到手是完美屏，不错
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+33,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='dff10ac5ef224d37996f7eac78f427e9', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写。原文是：“这本书实在太烂了,什么朗读手册,一点朗读的内容都没有.看了几页就不想看下去了.”\n\n情感标签是负向，所以我需要确保改写后的文本情感极性保持为负向。\n\n要求是：加入否定表达，使语义更复杂。长度不超过原文1.5倍，保持自然中文。\n\n原文长度：",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：这本书实在太烂了,什么朗读手册,一点朗读的内容都没有.看了几页就不想看下去了.
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+37,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='b45b0a046ec6424fb438cdc14ed65c93', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写，加入否定表达使语义更复杂。情感极性必须保持为负向，长度不超过原文的1.5倍，保持自然中文。\n\n原文内容：\n""钱也付了，书干等不来，好不容易找到客服电话，原来书没有了。钱突然退回来，单位查起来还以为受贿，连个证明都没有。伤心。。当当做了那么多年，你们的总裁",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：钱也付了，书干等不来，好不容易找到客服电话，原来书没有了。钱突然退回来，单位查起来还以为受贿，连个证明都没有。伤心。。当当做了那么多年，你们的总裁也天天媒体。服务还是不够精细，要不然我去你们那里管客服得了，肯定比现在好书又买了一次，总算买到了。。下次到卓越试试，看看是不是服务一样的烂
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+45,1,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='578ee8c11b2f4e93a88bf80c7d4afabe', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对中文评论进行改写。原文是：\n\n“在我刚开始从事设计的时候，阿尔瓦 阿尔托是第一个与我有缘，超越时代，地域对我指点的前辈。在他的世界里 没有概念的约束，这是任何渴望为了自由设计而用心的人最需要的精神内在与动力。美丽需要的两个前提是 干净 和 幽默。美丽的人。而这位建筑师 设计家可",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【正向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：在我刚开始从事设计的时候，阿尔瓦 阿尔托是第一个与我有缘，超越时代，地域对我指点的前辈。在他的世界里 没有概念的约束，这是任何渴望为了自由设计而用心的人最需要的精神内在与动力。美丽需要的两个前提是 干净 和 幽默。美丽的人。而这位建筑师 设计家可能具备的更多。宜家家居至今还在销售他在上个世纪30年代设计的曲线板读书椅。这本书物美价廉，适合热爱自由设计的每个人，我想是这样的。一九七九五月韩
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+49,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='d4950cdd24b5407d833f3a89cfc4de2d', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对给定的中文评论进行改写。原文是：""总体说来,应该是二星级宾馆.因为定的时间比较晚,所以只有这家酒店了.入住时,问前台一些黄山城市的信息,她们说不知道.一个入住也要办理二十几分钟,而且就我们几个人.房间的设施很陈旧,住的也不舒服.""\n\n情感标签是负向。我需要保持情感极性为负向，加",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：总体说来,应该是二星级宾馆.因为定的时间比较晚,所以只有这家酒店了.入住时,问前台一些黄山城市的信息,她们说不知道.一个入住也要办理二十几分钟,而且就我们几个人.房间的设施很陈旧,住的也不舒服.
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+53,1,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='f10ddff432cf42cca9e3d55cd7a8183b', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写。原文是：“房间稍微小了点 其他没有问题 很不错 上次和一日本客人一起住的 对方很中意 因为竟然有 NHK”\n\n情感标签是正向的，所以改写后的情感极性必须保持为正向。\n\n要求是加入否定表达，使语义更复杂。这意味着我需要引入一些否定元素，但整体上还是要保持",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【正向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：房间稍微小了点 其他没有问题 很不错 上次和一日本客人一起住的 对方很中意 因为竟然有 NHK
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+58,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='b3184ba7fbe04316a6ae98f5a949acbe', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写，加入否定表达使语义更复杂。改写后的情感极性必须保持为【负向】，长度不超过原文的1.5倍，并保持自然中文。\n\n原文内容：\n""各位广大的书友，本人特别喜欢看书，非常支持当当网给我提供了一个买书的平台。《明朝的那些事儿》这本书我看后，说实话，个人很不喜欢。首要",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：各位广大的书友，本人特别喜欢看书，非常支持当当网给我提供了一个买书的平台。《明朝的那些事儿》这本书我看后，说实话，个人很不喜欢。首要的是缺乏文采，一本书没有好的语言做支撑是很难成功的。作为历史书，它的故事性很差，有时为了幽默而幽默，显得特别低俗。书中穿插很多说理，使书的内容显得非常冗杂，不协调，令人难受。我不知道被人是否与我有同感，这仅是我的拙见。在这个喧嚣的年代，能写一本书真的很不容易，但写一本高质量的书跟不容易。
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+66,1,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='ce122da04d7440b99b91491bcd45e84d', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对中文评论进行改写。原文是：“住了几次，这次还特意带了朋友一起去入住，结果，酒店的早餐让我们太失望了，越来越差啊，九点去的时候吃的东西都没有什么了，以后我是不会再来了。”情感标签是正向，但原文内容显然是负向的，因为它表达了失望和不再来的意图。但情感标签指定为正向，所以我需要在改写时保",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【正向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：住了几次，这次还特意带了朋友一起去入住，结果，酒店的早餐让我们太失望了，越来越差啊，九点去的时候吃的东西都没有什么了，以后我是不会再来了。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+69,1,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='29c1307ef0ef4b9189beb91aa8a94cf4', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对给定的中文评论进行改写。原文是：“酒店还可以，房内有电脑，数字电视。早餐一般啦。隔音效果比较差，下面是商业街，不太安静。” 情感标签是正向。\n\n改写要求：加入否定表达，使语义更复杂。但情感极性必须保持为正向。长度不超过原文的1.5倍，保持自然中文。\n\n输出格式：只输出一个J",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【正向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：酒店还可以，房内有电脑，数字电视。早餐一般啦。隔音效果比较差，下面是商业街，不太安静。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+73,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='7cceca83008b47eabcb47f3d13246af6', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写，加入否定表达使语义更复杂。改写后的情感极性必须保持为【负向】，长度不超过原文的1.5倍，并保持自然中文。\n\n原文是关于一个酒店评论的负向情感，用户表达了失望和愤怒。酒店反馈部分试图道歉并解决问题，但用户还是负面的。\n\n关键要求：\n- 只输出一个JSO",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：對於公寓式酒店，一般期望也不會太高，不過不失就可以了。 可惜的是入南油後就極度失望，房間是夠大，但裝飾老土和低質量(我住的是豪華二人套房)，不推荐住這個酒店！！ 最可笑的是那種""套票""，多付了六十元打算可以打幾局保齡球，Check-in的時候給了我那些保齡球贈券，搞笑的是這些""贈券""是不能在星期五、六及日用的... 天呀，Ctrip office又沒有提醒，白白多付了六十元，雖然不多，重點是讓我和女友很氣憤，難道要平日跑去珠海""打保齡""嗎？那些贈券我仍然保留著，想看看南油和Ctrip.com有甚麼好解釋！！！ 宾馆反馈 2007年9月7日 ： 再次向您表示深深的歉意。酒店运动套票包含早餐券及高尔夫券或保龄球券，规定平日及节假日均可使用。由于保龄球馆事件当日有位新员工业务不熟，以为您用的是周末不可以使用的其它赠券，造成误会，我们也未能及时了解您的不快，事后我们专门以此案例作检讨，保证不再发生同类事件。为表示酒店真诚的歉意。您的保龄球票随时补办，酒店提供一套免费豪华二人套房给您，并承诺为您提供优质贴心的服务。希望您给我们一个
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+78,1,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='2a668f44ebf146978bde9457f39a29fb', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写，加入否定表达使语义更复杂。情感极性必须保持为正向，长度不超过原文1.5倍，保持自然中文。\n\n原文是：""看的第一本阿耐的书是《不得往生》，当时在图书馆借书时很偶然的看到的这个名字，本来想借回去带给同事看（他很喜欢看玄幻类的书），在办公室无事时随手乱翻发现内容",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【正向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：看的第一本阿耐的书是《不得往生》，当时在图书馆借书时很偶然的看到的这个名字，本来想借回去带给同事看（他很喜欢看玄幻类的书），在办公室无事时随手乱翻发现内容根本不是我想的那样，不由的我被深深的吸引，从此后，阿耐的作品成了我的最爱。这本书也想，阿耐能过以工人、农民、个体工商户、留学人员等不同的人的30年经历给我们再展了改革开放30年的历程，读之引人深思，值得一读，强烈推荐！
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+83,1,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='5da521ae1d0e488dacfe4025f3edfa6c', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，任务是改写中文评论，加入否定表达，使语义更复杂。但情感极性必须保持为正向。长度不超过原文的1.5倍，保持自然中文。\n\n原文内容：情感标签是正向，表达了对一本书的高度赞扬，包括作者、翻译、内容深度等。\n\n要求改写后加入否定表达。这意味着要在文本中加入一些否定词语或结构，如“不是”、“没有",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【正向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：我个人觉得这本书是我读过最好的一本书，书中采用为什么要这样，动机是什么，他的出现有什么背景知识，以及一个概念属于的多重含义，在不同场景的不同运用，这样的方式来进行的，我个人认为翻译的还不错，这本书的作者，真的是不愧为大师啊，每每看下几页纸，就感触颇多，那是很有体会啊，一本书能够勾起你很多的想法时，我想你读书的目的已经达到，如果你还在犹豫，那么请你果决点，绝对没有错，强烈推荐！
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+85,1,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='2bbb77a6a6f643bb95143da41d86a519', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='First, the user has given me a task to rewrite a Chinese comment. The original text is in Chinese, and I need to rewrite it by adding negative express",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【正向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：整机配置均衡，就是内存稍小，京东要是能再送个内存就完美了^_^ 本本外观很漂亮，尤其喜欢它的键盘设计。 LED屏显示效果很好，没有常规屏幕那种发虚的感觉，色彩很真实。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+102,1,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='b73469e333f548c583fa90f587b09684', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对中文评论进行改写，加入否定表达使语义更复杂。原文是：""本次入住酒店的网络不是很稳定，断断续续，希望能够改进。"" 情感标签是正向。\n\n关键点：\n- 改写后情感极性保持为正向。\n- 加入否定表达使语义更复杂。\n- 长度不超过原文1.5倍。原文长度：我来计算一下。原文：""本次入住",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【正向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：本次入住酒店的网络不是很稳定，断断续续，希望能够改进。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+107,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='72d1a5d15e55488db3c06a7b74bb32e4', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对给定的中文评论进行改写。原文是关于一套书，表达了对书的负面看法。情感标签是负向，我需要保持情感极性为负向。\n\n原文内容：\n""不知道为什么。我家女儿就是不喜欢这套书。我们一起看的时候她总是跑溜了。似乎这样的插图和乱七八糟的风格她不喜欢。我也不喜欢这样的书。图画不是很逼真。好多英",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：不知道为什么。我家女儿就是不喜欢这套书。我们一起看的时候她总是跑溜了。似乎这样的插图和乱七八糟的风格她不喜欢。我也不喜欢这样的书。图画不是很逼真。好多英文单词我看着都不认识怎么教她啊。可能是比较适合国外的小朋友吧。
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+120,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='bcbc2277a7dc459fbc477ed0e291e95c', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，任务是改写中文评论，加入否定表达，使语义更复杂。同时，保持情感极性为负向，长度不超过原文的1.5倍，并保持自然中文。\n\n原文内容是关于一个酒店的负面评论，涉及多个问题：客房服务差、电掣跳闸、服务员无礼貌、门口出租车司机乱开价、床不舒服等。\n\n情感标签是负向，所以改写后必须保持负向。\n",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：非常不满这酒店，配不上5星。第一,客房服务员没有水平,房卡出问题，叫了20分钟仍没有人出来开门。第二,电掣跳闸..也等了15分钟才有人上来。第三,服务员没有礼貌,说话太不象话,前台也有些接待人员完全不懂操作。第四,也就是最不满意的,就是身为5星级的酒店，门口那些出租车司机胡乱开价,我们就像水鱼被人宰...我们说开价太贵,他们竟然说从5星级出来,讨价还价,会影响我们身份..这是什么道理? 害得我们找不到车...这是我住的第一次遇到这样的5星级酒店,出现这样没有水平的配套。垃圾........... 补充点评 2007年12月10日 ： 还有床太不象话了，睡的时候床垫竟然可以感觉到弹簧的铁丝…睡得很不舒服
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+123,1,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='0beab66f1951415b93578f8c78552546', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对中文评论进行改写，加入否定表达使语义更复杂。改写后情感极性必须保持为【正向】，长度不超过原文的1.5倍，保持自然中文。\n\n原文内容：\n""确实是山上最好的酒店，环境和设施都很不错。我们这次住的是曙光别墅7201房，其他的别墅是竹木屋联排的，一排四间，我们这间是单独的且是水泥的，",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【正向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：确实是山上最好的酒店，环境和设施都很不错。我们这次住的是曙光别墅7201房，其他的别墅是竹木屋联排的，一排四间，我们这间是单独的且是水泥的，所以比较隔音，别墅区有3间这样的房间。设施齐全，有电吹风，水热也蛮大，没有空调，但山上晚上只有18度，用不上空调。我们上黄山是奥运前2天，天很好，所以房间还比较干燥，浴室有些潮，有2件羽绒服和加盖的被子。饭没有在宾馆吃，无法评价。服务还不错，动作挺快。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+125,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='a0535f083167481e868af4147713587f', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对中文评论进行改写，加入否定表达使语义更复杂。情感极性必须保持为负向，长度不超过原文的1.5倍，保持自然中文。\n\n原文是：“非常不好，我们渡过了一个让人难以忍受的纪念日 .com/thread-1368750-1-1.html 补充点评 2008年1月30日 ： .com/thre",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：非常不好，我们渡过了一个让人难以忍受的纪念日 .com/thread-1368750-1-2.html 补充点评 2008年1月30日 ： .com/thread-1368750-1-2.html
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+127,1,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='9abc028cdd2741439df44858826de4f7', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对中文评论进行改写。原文是：“学到后面，发现不是都和笔记一样，就前面几章一样”。情感标签是正向，但原文内容似乎是抱怨或负面，因为它说后面的内容和笔记不一样，只有前面几章一样。不过，情感标签指定为正向，所以我需要改写后保持正向情感。\n\n要求：加入否定表达使语义更复杂。改写后情感极性",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【正向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：学到后面，发现不是都和笔记一样，就前面几章一样
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+139,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='e18b5cc692814753bf058ceadbfcc470', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对中文评论进行改写，加入否定表达使语义更复杂。原文是：“显示屏塑料外壳边缘有损坏，是不是因为无店铺销售，所以提供的是等外品啊！”情感标签是负向。\n\n关键要求：\n- 改写后情感极性保持为【负向】。\n- 长度不超过原文1.5倍。我需要计算原文长度，然后确保改写后不超过1.5倍。\n",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：显示屏塑料外壳边缘有损坏，是不是因为无店铺销售，所以提供的是等外品啊！
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+140,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='75fe7c9f36524fee84a98064d9472988', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对给定的中文评论进行改写，加入否定表达使语义更复杂。要求是：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。\n\n原文是：""送的包比较普通,做工也不好,和商城上99块那款东芝笔记本包是一样的,希望能送好点的包""\n\n情感标签是负向。\n\n严格要求：\n- 只",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：送的包比较普通,做工也不好,和商城上99块那款东芝笔记本包是一样的,希望能送好点的包
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+142,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='9a2d9348720245fea048b56be87a8a1d', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对中文评论进行改写，加入否定表达使语义更复杂。原文是：“集成显卡,玩使命召唤5等要求很高的游戏比较卡,没有高清输出,用料没有以前老款结实了”。情感标签是负向，所以改写后情感极性必须保持为负向。\n\n关键要求：\n- 改写后加入否定表达，使语义更复杂。\n- 长度不超过原文1.5倍。",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：集成显卡,玩使命召唤5等要求很高的游戏比较卡,没有高清输出,用料没有以前老款结实了
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+144,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='a22e28e026e34c43b076811e3216ddf1', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写，加入否定表达使语义更复杂。要求包括：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。\n\n原文是关于酒店服务的负面评论。情感标签是负向，所以我需要确保改写后的情感仍然是负向。\n\n改写要点：\n- 加入否定表达：这意味着我要使用更多的否",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：酒店的服务简直不好程度排第一！我第一天住1702，房间漏风。 第二天调整到1710房间！这个房间的空调是坏的！半夜给冻醒了。 第三天调整到1107房间，明显比1702和1710房间小的很多，而且房间不能够上网，我已经被折磨的没有力气在调整房间了。想躺在床上看看电视，我的天啊！看不了！ 总之我对这次携程的服务比较满意，对该辽宁省沈阳市新湖城市酒店提供的客房服务是特别特别特别的不满意！我希望携程能够好好考虑一下自己的加盟酒店，总是这样我们还怎么相信携程这样的品牌。总体来说我很郁闷！也特别的伤心！
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+145,1,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='6a87692156ae4565ab002aefd907d44e', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对中文评论进行改写，加入否定表达，使语义更复杂。但情感极性必须保持为正向。原文是正向的，所以改写后不能改变情感倾向。\n\n原文：""2007年10月19日入住，总体感觉不错，位置闹中取静，走出酒店斜对面就是“桥香圆”米线，房间设施可以，服务不错，门口的南疆浴场物美价廉，早餐只能说过得去",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【正向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：2007年10月19日入住，总体感觉不错，位置闹中取静，走出酒店斜对面就是“桥香圆”米线，房间设施可以，服务不错，门口的南疆浴场物美价廉，早餐只能说过得去去。但床不是很舒服，转身会响的。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+147,1,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='701d2db79ecc4dfda033a708b7425da6', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对中文评论进行改写，加入否定表达使语义更复杂。但情感极性必须保持为正向，长度不超过原文的1.5倍，保持自然中文。\n\n原文是：""LED屏，亮，可视角度大（下方可视效果不好）。 较轻。新款适配器，小。 键盘手感好。 HDMI 室温25度，普通应用，CPU50度左右，硬盘45度左右，散",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【正向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：LED屏，亮，可视角度大（下方可视效果不好）。 较轻。新款适配器，小。 键盘手感好。 HDMI 室温25度，普通应用，CPU50度左右，硬盘45度左右，散热尚可。 摄像头清晰。 720P和1080P流畅播放。 价位不高。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+148,1,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='b7d517bc066d4dcbabddacc196fd060a', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写。改写时要加入否定表达，使语义更复杂。但情感极性必须保持为正向。长度不超过原文的1.5倍。保持自然中文。\n\n原文内容：\n""一次买了好几本书,算作给孩子的儿童节礼物.担心书多了对孩子反而不好,所以就先带了两本回家<亨利爷爷找幸运><是谁在门外>.孩子很喜欢,",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【正向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：一次买了好几本书,算作给孩子的儿童节礼物.担心书多了对孩子反而不好,所以就先带了两本回家<亨利爷爷找幸运><是谁在门外>.孩子很喜欢,也很受启发.跟亨利爷爷一样也找到了自己生活中许多幸运的事.本来我提议在?送给我最心爱的xxx?处写上她和弟弟的名字,算作送给他们俩个的礼物,一开始她不愿意,看了<是谁在门外>,书还没读完她就同意了写上弟弟的名字.一本好书对孩子的影响,胜过我多少的说教.
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+158,1,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='20ab00367f84454fbc6664f418c26e41', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对给定的中文评论进行改写。具体来说，需要加入否定表达，使语义更复杂，但保持情感极性为正向，长度不超过原文的1.5倍，并保持自然中文。\n\n原文内容：看完后不仅对中国以前以及现在所在进行的改革有了新的认识，同时也对社会和生活在这个社会中的人有了新的启发。很多事情不是我们所左右的了的，",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【正向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：看完后不仅对中国以前以及现在所在进行的改革有了新的认识，同时也对社会和生活在这个社会中的人有了新的启发。很多事情不是我们所左右的了的，时代造就了很多英雄，同样也湮没了很多人，我们生活在这个时代，这个社会中，最应该学会的就是顺应时势！不管你做的是惊天动地的大事，还是过自己安稳的小日子，要想过的好都不要违背时代发展的趋势！
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+169,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='eb10f131b1664696b1c2e7f1ac35685c', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对中文评论进行改写，加入否定表达使语义更复杂。原文是：""去中关村总部提货没有，又去的亚运村，亚运村的服务人员态度不好！！！我是新手不会装系统！让帮忙装一下，说不管，郁闷了半天 ，最后让我同事帮我搞好的！！应该加强人员的培训！！！""\n\n情感标签是负向，改写后情感极性必须保持为负向。\",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：去中关村总部提货没有，又去的亚运村，亚运村的服务人员态度不好！！！我是新手不会装系统！让帮忙装一下，说不管，郁闷了半天 ，最后让我同事帮我搞好的！！应该加强人员的培训！！！
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+173,1,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='b1fba40f09414705a692ed8bc51a5149', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对中文评论进行改写，加入否定表达，使语义更复杂。但情感极性必须保持为正向。改写后长度不超过原文的1.5倍，并保持自然中文。\n\n原文内容是：\n\n“我觉得这本手册的优点：1、开本小巧、精装本，便于携带。2、手绘图，绘制准确、细致，鸟的各种姿态、成鸟、亚成、冬羽、繁殖羽、雌雄基本都",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【正向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：我觉得这本手册的优点：1、开本小巧、精装本，便于携带。2、手绘图，绘制准确、细致，鸟的各种姿态、成鸟、亚成、冬羽、繁殖羽、雌雄基本都有。3、实用，避免了枯燥的学术描述，内容简介明了，侧重鸟种的辨别。不足：1、缺少拉丁名，不便于查阅鸟种。2、没有鸟名目录。总体上看还是不错的，弥补了目前常用的鸟类图鉴不详细的不足，建议观鸟初学者使用。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+176,0,negation,ParseError,Failed to parse aug_text,"{""","请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：我前几天发表了我的看法，竟然被当当工作人员删除了。多的我就不再说了，我只想再说一句：这本书真的不值得一看，文笔平淡，情节做作～这么多名人推荐，我只能说出版商厉害！！
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+177,1,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='99a1d1076988408c976f4eab443efa90', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写。原文是：""又是为了吸烟区和非吸烟区！一开始总是说没有，最后还都能找到， 唉！ 真不明白。 宾馆反馈 2008年7月8日 ： 您的宝贵意见得到了我们酒店管理层的高度重视,我们已经加强了从预订到前台对客人的吸烟房和无烟房的需求的重视.但如果酒店房间特别紧张时,酒店",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【正向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：又是为了吸烟区和非吸烟区！一开始总是说没有，最后还都能找到， 唉！ 真不明白。 宾馆反馈 2008年7月8日 ： 您的宝贵意见得到了我们酒店管理层的高度重视,我们已经加强了从预订到前台对客人的吸烟房和无烟房的需求的重视.但如果酒店房间特别紧张时,酒店也只有将吸烟房做无烟处理,敬请谅解!欢迎您下次继续入住我酒店!
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+180,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='27466b650c1f48e39534be4e5924a875', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对给定的中文评论进行改写，加入否定表达使语义更复杂。情感极性必须保持为负向，长度不超过原文的1.5倍，并保持自然中文。\n\n原文：大体感觉外观设计比较粗糙，快捷键的位置手感不好，右侧的插鼠标的U口偏下（在光驱以下）使用起来困难，由于是新品改装XP系统比较困难，需从宏?香港主页下载驱",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：大体感觉外观设计比较粗糙，快捷键的位置手感不好，右侧的插鼠标的U口偏下（在光驱以下）使用起来困难，由于是新品改装XP系统比较困难，需从宏?香港主页下载驱动
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+181,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='5f22c733b080476d8df3e1283a8f0f42', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对中文评论进行改写，加入否定表达使语义更复杂。原文是：“转轴设计不好，合上屏幕后后面缝隙很大，手一抓就变形了，只能抓前侧”。情感标签是负向。\n\n要求：\n- 改写后情感极性保持为【负向】。\n- 长度不超过原文1.5倍。原文长度：我需要计算一下。原文是：“转轴设计不好，合上屏幕后",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：转轴设计不好，合上屏幕后后面缝隙很大，手一抓就变形了，只能抓前侧
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+183,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='cf9d6d777df7488d97c06fd2f25ade9c', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对给定的中文评论进行改写，加入否定表达，使语义更复杂。改写后的情感极性必须保持为负向，长度不超过原文的1.5倍，并且保持自然中文。\n\n原文是：""一直没看过这部电视剧。只知道许多媒体都说它收视率挺高，还说书好看。冲这我才买的这本书的。现在已经看了三分之一了。说实话，感觉一般，也许是",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：一直没看过这部电视剧。只知道许多媒体都说它收视率挺高，还说书好看。冲这我才买的这本书的。现在已经看了三分之一了。说实话，感觉一般，也许是看惯了一般都把优秀者当主角的作品吧，总感觉这本书并不能很好的吸引我。看着剧情，我都替这人物着急，心想“他怎么就能这么笨呢？”希望接下来的下半段能让我有所惊喜。
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+187,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='c084de1b41614e9fb3edcf7dae7268e4', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对给定的中文评论进行改写，加入否定表达，使语义更复杂。情感极性必须保持为负向，长度不超过原文的1.5倍，并保持自然中文。\n\n原文：""说明一下.我这是对于当当网.而非这本图书!我购书图书后.支付完后.当当网没货.把交易关了.但事隔快一个月了!!!本应是我的钱.还没有退回来.加起来快",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：说明一下.我这是对于当当网.而非这本图书!我购书图书后.支付完后.当当网没货.把交易关了.但事隔快一个月了!!!本应是我的钱.还没有退回来.加起来快10单了.300多元!!!.我准备到315投去.
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+197,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='01e948b9c45b4dc9bfa5c9f96ba2dcf6', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对给定的中文评论进行改写。原文是：""看了几页就没有看下去的欲望了，作者一直在吹牛。一会说某某某太太一直治不好什么病，经过他一看，用了几位药，或者按了几下，马上就好了。要么就是什么哪个医生一直治不好什么病，找他帮忙。而关于真正的东西，根本没有详细说明。烂书~""\n\n情感标签是负向，我",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：看了几页就没有看下去的欲望了，作者一直在吹牛。一会说某某某太太一直治不好什么病，经过他一看，用了几位药，或者按了几下，马上就好了。要么就是什么哪个医生一直治不好什么病，找他帮忙。而关于真正的东西，根本没有详细说明。烂书~
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+198,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='82601cada8bc461885ea9355c1da9d49', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对中文评论进行改写，加入否定表达使语义更复杂。原文是：""和其他netbook比起来, 这款机器还是有点贵的. 另外大陆始终没有引进高分屏的版本, 很遗憾. 升级内存需要拆键盘, 对一般用户可能会是个问题."" 情感标签是负向。\n\n要求：\n- 改写后情感极性保持为【负向】：意思是情",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：和其他netbook比起来, 这款机器还是有点贵的. 另外大陆始终没有引进高分屏的版本, 很遗憾. 升级内存需要拆键盘, 对一般用户可能会是个问题.
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+200,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='694c88b7cfa749da9bfcd01ddb92cf6b', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对中文评论进行改写，加入否定表达使语义更复杂。原文是：""启动的时候不知是硬盘还是光驱，总是要响两声，启动后倒不还安静。没有摄像头。"" 情感标签是负向。\n\n改写要求：\n- 情感极性保持为负向。\n- 镞度不超过原文1.5倍。原文的长度：我来数一下字符。""启动的时候不知是硬盘还是光驱",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：启动的时候不知是硬盘还是光驱，总是要响两声，启动后倒不还安静。没有摄像头。
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+201,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='14a7059bfe3048ba9f57786bc3ee60ac', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对中文评论进行改写，加入否定表达使语义更复杂。原文的情感极性是负向，改写后也要保持负向。长度不超过原文的1.5倍，保持自然中文。\n\n原文内容：\n""我买了4本，硬着头皮看完第一本，就把四本都送人了。实在不喜欢。这本书有几大弊病：1，作者翻来覆去就在写那些尔虞我诈杀人如麻的官场斗争",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：我买了4本，硬着头皮看完第一本，就把四本都送人了。实在不喜欢。这本书有几大弊病：1，作者翻来覆去就在写那些尔虞我诈杀人如麻的官场斗争，可惜我对此毫无兴趣，我宁愿去看些后宫秘史之类，更有人情味的东西。2，叙事顺序混乱。一看而知是网上写出来的东西，重重叠叠，反反复复，看完后，我都搞不清楚那个事情先，那个事情后。3，文笔差。作者大约是得了某位武侠小说家的真传，文笔苍白，只有无数的感叹号让人过目难忘。不明白为什么这本书会受到追捧，是喜欢它的文笔，还是它所介绍的人斗技法要我书的人说是要给她正在上高中的儿子看，我心里格登了一下，有些不想给，怕误人子弟。
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+205,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='f6564279a0234e6f896eef1e3449414b', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，任务是改写给定的中文评论，加入否定表达使语义更复杂。情感极性必须保持为负向，长度不超过原文1.5倍，保持自然中文。\n\n原文是：""HP没有提供WINDOWS XP的驱动。在HP论坛，目前还没有推出CQ35-105TX的相应驱动。因此，想在WINDOW xp使用要看你的忍受力。安装驱动也是一种",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：HP没有提供WINDOWS XP的驱动。在HP论坛，目前还没有推出CQ35-105TX的相应驱动。因此，想在WINDOW xp使用要看你的忍受力。安装驱动也是一种考验。没用鼠标和包包送，小气。
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+212,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='21a1326ad90040728fbeced444ade374', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对给定的中文评论进行改写，加入否定表达使语义更复杂。原文有五个部分，每个部分描述了一个问题。改写后情感极性必须保持为负向，长度不超过原文的1.5倍，并且保持自然中文。\n\n原文内容：\n1. 电源插头不紧，容易脱落；\n2. 鼠标左右键不灵敏，松动；\n3. 散热不好，系统有时运行",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：1）电源插头不紧，容易脱落；2）鼠标左右键不灵敏，松动；3）散热不好，系统有时运行特慢；4）运行有吵声，如果要求不高的话倒不是什么问题；5）表面漆容易刮花，稍不留意就有刮痕。
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+213,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='221a6efe80d34d8c801c7ecc1c57f477', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对中文评论进行改写，加入否定表达使语义更复杂。情感极性必须保持为负向，长度不超过原文1.5倍，保持自然中文。\n\n原文：""笔记本外壳和神舟的一样，体现不出牌子。电池是4400mAh的，实际续航时间也太短，同方太吝啬了，说明书太简，驱动光盘没有，包和鼠标也没有，连电源适配器的电源线都比",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：笔记本外壳和神舟的一样，体现不出牌子。电池是4400mAh的，实际续航时间也太短，同方太吝啬了，说明书太简，驱动光盘没有，包和鼠标也没有，连电源适配器的电源线都比别的牌子短。
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+216,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='57d6a2bfd88b45e7a0ee433156b78669', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对中文评论进行改写，加入否定表达使语义更复杂。原文是：“没有附赠背包，而且usb接口过少，才两个，共用口室不能接usb设备的，哎~~有点不方便”。情感标签是负向，所以我需要保持情感极性为负向。\n\n要求：\n- 改写后情感极性保持为【负向】。\n- 长度不超过原文1.5倍。原文长度：",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：没有附赠背包，而且usb接口过少，才两个，共用口室不能接usb设备的，哎~~有点不方便
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+217,0,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='2070872ce61e4b51af00e0b68e1d1670', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，任务是改写给定的中文评论，加入否定表达，使语义更复杂。情感极性必须保持为负向，长度不超过原文1.5倍，保持自然中文。\n\n原文：这是我有生以来住过的最差的4星级酒店--真的绝对不夸张！我订的是个套房，可进到房间，一看，居然是60年代的装修，完全和图片上的不一样--这也太有欺骗性了吧！就这样的",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【负向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：这是我有生以来住过的最差的4星级酒店--真的绝对不夸张！我订的是个套房，可进到房间，一看，居然是60年代的装修，完全和图片上的不一样--这也太有欺骗性了吧！就这样的房间还要448（不含早餐），太不值得了。卫生间旧就不说了，还脏脏的感觉，浴缸都有种让我下不去脚的感觉，整个房间都有股霉味。问了前台，说其他楼层都装修过就套房这层没装修--那怎么还要较高的价格呢？！ 真不能理解携程怎么会给出那样的介绍那样的图片和那样的价格！
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+218,1,negation,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='af1d881d56b843a4bb31e7f88758bcb5', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写，加入否定表达使语义更复杂。改写后情感极性保持为【正向】，长度不超过原文的1.5倍，保持自然中文。\n\n原文：\n“相对其他一线品牌价格低,配置也均衡,xp很容易装,跟普通装电脑没两量,给后来买的朋友一点建议吧,用深度的xp,按F2进入bois,设置光驱启动,",,"请对以下中文评论进行改写，加入否定表达使语义更复杂。
+要求：改写后情感极性保持为【正向】，长度不超过原文1.5倍，保持自然中文。
+
+原文：相对其他一线品牌价格低,配置也均衡,xp很容易装,跟普通装电脑没两量,给后来买的朋友一点建议吧,用深度的xp,按F2进入bois,设置光驱启动,这个懂吧/然后跟平时安装xp差不多,可能大家用ghost比较多,关于分区安装盘微软已经自带了,很方便,关键安装的光盘要带sata口的驱程,建议用深度6.2或者雨林,其他驱程网上很多,不行的话查ACER的tai wan网站,不懂的话PM我.
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+7,1,transition,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='968d01f48e5b407abfb8fb20d5577604', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写，加入转折结构使前后形成对比。最终情感极性保持为正向，转折后体现最终情感，并保持自然中文。\n\n原文有5个部分：\n\n1. 白色的，很漂亮，做工还可以；\n\n2. 网上的软件资源非常丰富，这是我买它的最主要原因；\n\n3. 电池不错，昨天从下午两点到晚上",,"请对以下中文评论进行改写，加入转折结构使前后形成对比。
+要求：改写后最终情感极性保持为【正向】，转折后体现最终情感，保持自然中文。
+
+原文：1. 白色的，很漂亮，做工还可以； 2. 网上的软件资源非常丰富，这是我买它的最主要原因； 3. 电池不错，昨天从下午两点到晚上十点还有25分钟的剩余时间（关闭摄像头，无线和蓝牙）主要拷贝东西，看起来正常使用八小时左右没问题； 4. 散热不错，CPU核心不过40~55度，很多小本要上到80度了； 5. 变压器很小巧，很多小本的电源都用的是大本的电源，本倒是很轻，可旅行重量还是比较重。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+10,0,transition,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='6689b9545b1f4ba884fa790af83616cf', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写。原文是一段关于张爱玲和胡兰成的评论，情感标签是负向。我需要加入转折结构，使前后形成对比，最终情感极性保持为负向。\n\n原文的主要内容：\n- 书被朋友借走，作者已经看过，买书是因为张爱玲。\n- 提到张子静的书，显示张爱玲对弟弟不热情，但有一次她很开心，因为",,"请对以下中文评论进行改写，加入转折结构使前后形成对比。
+要求：改写后最终情感极性保持为【负向】，转折后体现最终情感，保持自然中文。
+
+原文：书一到，即被朋友借走，我是早已看过了的，买它，是因为张爱玲。看过张子静的《我的姊姊张爱玲》，可以看出，张对自己的弟弟也是不甚热情，这是她的性格。但是有一次张子静去找她，那天张爱玲却是很开心的样子。后来张子静推算，彼时张爱玲正与胡兰成相恋。很多人不耻于胡兰成的用情不专，我当然也很反感，但我也想说，胡兰成是给过张爱的欢喜的。张是怎样聪明的女子，若不是爱，她也不会那么痴。属于他们的爱情，让他们自己品尝与承担。胡的文字，确实是不错的，有一种儒雅在里面。不知道是不是那份淡淡的气氛，曾经让张心动——“岁月静好，现世安稳”。
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+15,1,transition,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='ef768d91828241649e7e083d6830ba8f', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写，加入转折结构，使前后形成对比。改写后最终情感极性必须保持为正向，转折后体现最终情感，保持自然中文。\n\n原文是：“在网上偶尔看到别人的推荐，于是买一本看看，求的是轻松。那天正好坐飞机去北京，在飞机上我不停喷笑，努力克制，好歹也要装出‘杜拉拉’型的职场白骨精形",,"请对以下中文评论进行改写，加入转折结构使前后形成对比。
+要求：改写后最终情感极性保持为【正向】，转折后体现最终情感，保持自然中文。
+
+原文：在网上偶尔看到别人的推荐，于是买一本看看，求的是轻松。那天正好坐飞机去北京，在飞机上我不停喷笑，努力克制，好歹也要装出“杜拉拉”型的职场白骨精形象。等下飞机的时候，刚好看完，却开始心里泛堵。总觉得像咬了口大红薯，虽然味美，但是卡在食道下不去，憋得慌。坐出租去酒店的时候，看到初春的北京还是处处冷涩，突然有种顿悟的感觉，北京的青春和南方的如此不同，彪悍之余还带着一点忧伤。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+27,0,transition,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='499516f034524a58b9e3a3f9edc17474', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对给定的中文评论进行改写，加入转折结构，使前后形成对比。改写后的情感极性必须保持为负向，转折后体现最终情感，并保持自然中文。\n\n原文是：\n""硬盘到手就发现一个坏块，因为是完美屏，没回京东换新，花了两天在本地换新硬盘，发票都不需要；电池衔接很松，可有1mm间隙；出厂时A、B面贴的",,"请对以下中文评论进行改写，加入转折结构使前后形成对比。
+要求：改写后最终情感极性保持为【负向】，转折后体现最终情感，保持自然中文。
+
+原文：硬盘到手就发现一个坏块，因为是完美屏，没回京东换新，花了两天在本地换新硬盘，发票都不需要；电池衔接很松，可有1mm间隙；出厂时A、B面贴的保护膜太敷衍，太多气泡，虽然反正要撕掉，但说明厂家态度不严谨。
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+43,0,transition,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='ea44c730919f49729686f39442fbf155', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对提供的中文评论进行改写。评论内容是：""第一次装xp到一半蓝屏，不过进bios，在advanced一栏里把硬盘模式从achi改为ide即可。驱动网上都有，下载g430驱动就行了""。情感标签是负向。\n\n改写的要求是：\n- 加入转折结构，使前后形成对比。\n- 改写后最终情感极性保",,"请对以下中文评论进行改写，加入转折结构使前后形成对比。
+要求：改写后最终情感极性保持为【负向】，转折后体现最终情感，保持自然中文。
+
+原文：第一次装xp到一半蓝屏，不过进bios，在advanced一栏里把硬盘模式从achi改为ide即可。驱动网上都有，下载g430驱动就行了
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+48,1,transition,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='8e91ba12cc24403abcc6f1245ba56b5e', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，任务是改写中文评论，加入转折结构使前后形成对比。要求：改写后最终情感极性保持为正向，转折后体现最终情感，保持自然中文。\n\n原文是：10月16日入住该酒店.感觉不错哦,离汽车站和火车站的距离都不是非常远.房间很干净,空间也非常大.周边的交通环境也好.可能住的楼层比较高,也没有任何的噪音.晚上",,"请对以下中文评论进行改写，加入转折结构使前后形成对比。
+要求：改写后最终情感极性保持为【正向】，转折后体现最终情感，保持自然中文。
+
+原文：10月16日入住该酒店.感觉不错哦,离汽车站和火车站的距离都不是非常远.房间很干净,空间也非常大.周边的交通环境也好.可能住的楼层比较高,也没有任何的噪音.晚上有发生热水管道出问题的小插曲,但服务态度良好,解决问题也很及时,丝毫没有影响到对酒店的好感.主要是价格非常合理.可以说对该酒店非常满意.小缺点就是硬件
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+55,0,transition,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='69410ae887b84754bae55724cc83a8c9', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对中文评论进行改写，加入转折结构使前后形成对比。改写后情感极性必须保持为负向，转折后体现最终情感。\n\n原文：做工一般，和预期有一定差距；本有点厚，再薄一点就好了；键盘比较小；16：9的屏用着有点不习惯；重装系统是比较难，不过还好，一晚上系统软件全部搞定。\n\n情感标签：负向。\n",,"请对以下中文评论进行改写，加入转折结构使前后形成对比。
+要求：改写后最终情感极性保持为【负向】，转折后体现最终情感，保持自然中文。
+
+原文：做工一般，和预期有一定差距；本有点厚，再薄一点就好了；键盘比较小；16：9的屏用着有点不习惯；重装系统是比较难，不过还好，一晚上 系统 软件 全部搞定。
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+62,0,transition,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='058c943de91f4036a931b7d128990cd7', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写。原文是：""酒店不管是外观还是内部设施都已经落后了,提醒一下,酒店2007年装修,那只是10-14层,恐怕携程的客人是无缘入住了. 其实地理位置也一般,虽然步行15分钟到步行街,但每天的往返还不如住在附近.总之,488的价格太不值了.""\n\n情感标签是负向，所",,"请对以下中文评论进行改写，加入转折结构使前后形成对比。
+要求：改写后最终情感极性保持为【负向】，转折后体现最终情感，保持自然中文。
+
+原文：酒店不管是外观还是内部设施都已经落后了,提醒一下,酒店2007年装修,那只是10-14层,恐怕携程的客人是无缘入住了. 其实地理位置也一般,虽然步行15分钟到步行街,但每天的往返还不如住在附近.总之,488的价格太不值了.
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+71,1,transition,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='46589ed9ec7d4a7f95d4acf32dbb37c9', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写，加入转折结构使前后形成对比。改写后最终情感极性保持为【正向】，转折后体现最终情感，保持自然中文。\n\n原文是：\n\n""习武是为了什么？文武合一为道，传统并非只是文。我非常喜欢这句话：通神达化，备万贯一；理象会通，体用俱备。这也许是对武最好的诠释。书中有几个",,"请对以下中文评论进行改写，加入转折结构使前后形成对比。
+要求：改写后最终情感极性保持为【正向】，转折后体现最终情感，保持自然中文。
+
+原文：习武是为了什么？文武合一为道，传统并非只是文。我非常喜欢这句话：通神达化，备万贯一；理象会通，体用俱备。这也许是对武最好的诠释。书中有几个观点我非常认同：一：武非神鬼之说，而是实实在在的文化与艺术；二：武一直以它独有的脚步在发展，在前进；三：各民族都对武的发展做了贡献。看罢书后，我真想学习《磨旗棍》这门学有学有渊源的武术。可惜，我没有马先生的联系方式，留待有缘吧。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+94,0,transition,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='3069a33418224030b413324c15883cae', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对中文评论进行改写，加入转折结构，使前后形成对比。改写后最终情感极性必须保持为负向，转折后体现最终情感，并保持自然中文。\n\n原文是：“但是没有分区。而且电脑上贴的是VISTA标志，装的是XP系统。从电脑上查，显卡是集成的ATI HD3400,但是问客服，客服只答复“该款电脑是独立",,"请对以下中文评论进行改写，加入转折结构使前后形成对比。
+要求：改写后最终情感极性保持为【负向】，转折后体现最终情感，保持自然中文。
+
+原文：但是没有分区。而且电脑上贴的是VISTA标志，装的是XP系统。从电脑上查，显卡是集成的ATI HD3400,但是问客服，客服只答复“该款电脑是独立显卡”，不知道是什么问题。电源开关处的板有点向上凸。
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+124,1,implicit,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='e7a95803c955408ba20068f34d3de7a3', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对中文评论进行改写，去掉明显情感词，用隐晦含蓄方式表达相同态度。情感极性保持为正向，可用反问、省略、暗示等手法，保持自然中文。\n\n原文是：\n1. 性价比高，能流畅运行游戏。\n2. 订单处理效率高。\n3. 物流快捷。\n\n情感标签：正向。\n\n严格要求：\n- 只输出一个J",,"请对以下中文评论进行改写，去掉明显情感词，用隐晦含蓄方式表达相同态度。
+要求：改写后情感极性保持为【正向】，可用反问、省略、暗示等手法，保持自然中文。
+
+原文：1.性价比高，能流畅运行游戏。 2.订单处理效率高。 3.物流快捷。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+133,1,implicit,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='67456f4f928e4ab3997e8460cdd6ce05', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对中文评论进行改写，去掉明显情感词，用隐晦含蓄方式表达相同态度。原文是：""小巧轻便，联想品牌保修服务值得信赖。自带XP 家庭版系统，内带操作系统恢复盘和驱动光盘。"" 情感标签是正向。\n\n关键点：\n- 情感极性必须保持为正向。\n- 使用反问、省略、暗示等手法。\n- 改写后要自",,"请对以下中文评论进行改写，去掉明显情感词，用隐晦含蓄方式表达相同态度。
+要求：改写后情感极性保持为【正向】，可用反问、省略、暗示等手法，保持自然中文。
+
+原文：小巧轻便，联想品牌保修服务值得信赖。自带XP 家庭版系统，内带操作系统恢复盘和驱动光盘。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+207,1,implicit,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='f86d47b1d9ac40aaa8ead7adf6c41847', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，任务是改写中文评论，去掉明显情感词，用隐晦含蓄的方式表达相同态度。情感极性必须保持为正向。原文是：“帮朋友买的台式、笔记本清一色的HP，配置挺不错的，性价比突出。HP大品牌，4000多元的首选！”\n\n情感标签是正向，所以改写后仍然要传达正面态度，但要隐晦。\n\n要求：只输出一个JSON对",,"请对以下中文评论进行改写，去掉明显情感词，用隐晦含蓄方式表达相同态度。
+要求：改写后情感极性保持为【正向】，可用反问、省略、暗示等手法，保持自然中文。
+
+原文：帮朋友买的台式、笔记本清一色的HP，配置挺不错的，性价比突出。HP大品牌，4000多元的首选！
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+211,0,implicit,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='42de0dd53256408d9b721b7c589b45f4', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写。原文是：“这本书是我08年所读的书中，较有收获之一。书中的一些观点打破我一些惯有观念。作者将二十岁年龄段里出现的迷惑作了一定的个人观点解答。值得处于这个年龄段的女孩看看。”\n\n情感标签是“负向”，意思是负面情感。但我需要改写，去掉明显情感词，用隐晦含蓄方式",,"请对以下中文评论进行改写，去掉明显情感词，用隐晦含蓄方式表达相同态度。
+要求：改写后情感极性保持为【负向】，可用反问、省略、暗示等手法，保持自然中文。
+
+原文：这本书是我08年所读的书中，较有收获之一。书中的一些观点打破我一些惯有观念。作者将二十岁年龄段里出现的迷惑作了一定的个人观点解答。值得处于这个年龄段的女孩看看。
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+244,1,implicit,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='df9d133086ef42fba2ec404b8fdcfe09', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对中文评论进行改写。原文是：""服务一流，门口公交四通八达，早餐丰富，值得一住。我到厦门五天，两天锦江之星，两天厦门宾馆，都不错，很满意。"" 情感标签是正向。\n\n改写的要求：\n- 去掉明显情感词，用隐晦含蓄方式表达相同态度。\n- 情感极性保持为正向。\n- 可用反问、省略、暗示",,"请对以下中文评论进行改写，去掉明显情感词，用隐晦含蓄方式表达相同态度。
+要求：改写后情感极性保持为【正向】，可用反问、省略、暗示等手法，保持自然中文。
+
+原文：服务一流，门口公交四通八达，早餐丰富，值得一住。我到厦门五天，两天锦江之星，两天厦门宾馆，都不错，很满意。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+330,1,implicit,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='4a10d601bebc42fe987d7fa8ea8fb227', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写。原文是：“比较新的四星酒店，各方面都还不错，应该算是很标准的4星服务，值得推荐 宾馆反馈 2008年7月31日 ： 感谢您对酒店的认可，期待您的再次光临！” 情感标签是正向。\n\n关键要求：\n- 去掉明显情感词。\n- 用隐晦含蓄方式表达相同态度。\n- ",,"请对以下中文评论进行改写，去掉明显情感词，用隐晦含蓄方式表达相同态度。
+要求：改写后情感极性保持为【正向】，可用反问、省略、暗示等手法，保持自然中文。
+
+原文：比较新的四星酒店，各方面都还不错，应该算是很标准的4星服务，值得推荐 宾馆反馈 2008年7月31日 ： 感谢您对酒店的认可，期待您的再次光临！
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+383,1,implicit,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='4a35a490d7774a3ba87dbc63d08b0783', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对中文评论进行改写，去掉明显情感词，用隐晦含蓄的方式表达相同的态度。情感极性必须保持为正向。可以使用反问、省略、暗示等手法，并保持自然中文。\n\n原文是：“酒店设备不错，也干净，但离地铁站还是有一段距离，要穿过好几个小商场，没什么路标指示，还是要问一下人。但这样的价钱，性价比算不错",,"请对以下中文评论进行改写，去掉明显情感词，用隐晦含蓄方式表达相同态度。
+要求：改写后情感极性保持为【正向】，可用反问、省略、暗示等手法，保持自然中文。
+
+原文：酒店设备不错，也干净，但离地铁站还是有一段距离，要穿过好几个小商场，没什么路标指示，还是要问一下人。但这样的价钱，性价比算不错了。而且用港币付款，兑成人民币很划算。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+420,1,implicit,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='97dc109eb9ce427393c372561a61d454', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写。原文是：“地理位置不错，房间环境也可以，洗衣速度快，值得称赞，唯一不足就是装修期间，很多楼层乱乱的。” 情感标签是正向。\n\n改写要求：\n- 去掉明显情感词。\n- 用隐晦含蓄的方式表达相同态度。\n- 保持情感极性为正向。\n- 可以使用反问、省略、暗示",,"请对以下中文评论进行改写，去掉明显情感词，用隐晦含蓄方式表达相同态度。
+要求：改写后情感极性保持为【正向】，可用反问、省略、暗示等手法，保持自然中文。
+
+原文：地理位置不错，房间环境也可以，洗衣速度快，值得称赞，唯一不足就是装修期间，很多楼层乱乱的。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+437,1,implicit,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='0b42aa83831945ba9b466b64044fe560', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对给定的中文评论进行改写。评论是：“轻薄，性价比高！是值得！我公司4月底才买的一模一样的机子，花了5000多”。情感标签是正向。\n\n改写的要求：\n- 去掉明显情感词。\n- 用隐晦含蓄方式表达相同态度。\n- 情感极性保持为正向。\n- 可用反问、省略、暗示等手法。\n- 保持",,"请对以下中文评论进行改写，去掉明显情感词，用隐晦含蓄方式表达相同态度。
+要求：改写后情感极性保持为【正向】，可用反问、省略、暗示等手法，保持自然中文。
+
+原文：轻薄，性价比高！是值得！我公司4月底才买的一模一样的机子，花了5000多
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+558,1,implicit,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='e6c1cfdd1e434aae82a3e82cd7bf6640', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对给定的中文评论进行改写。原文是：1．前台很有礼貌, 对客户的合理要求能有很快的回应. 2．不错的酒店. 3．会向朋友推荐. 情感标签是正向。\n\n要求是：去掉明显情感词，用隐晦含蓄方式表达相同态度。改写后情感极性保持为正向，可用反问、省略、暗示等手法，保持自然中文。\n\n严格输",,"请对以下中文评论进行改写，去掉明显情感词，用隐晦含蓄方式表达相同态度。
+要求：改写后情感极性保持为【正向】，可用反问、省略、暗示等手法，保持自然中文。
+
+原文：1．前台很有礼貌, 对客户的合理要求能有很快的回应. 2．不错的酒店. 3．会向朋友推荐.
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+740,1,implicit,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='8b54a0b23fba4d11b365cb9144ad695f', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对一段中文评论进行改写。原文是：“优点基本和大家说的差不多。样子比较好看；键盘很舒服；散热也还不错，在室温26的情况下左掌托稍微能感觉到热度，还能接受。性价比还行。”\n\n情感标签是正向。我需要改写它，去掉明显情感词，用隐晦含蓄的方式表达相同态度。保持情感极性为正向，可以使用反问、",,"请对以下中文评论进行改写，去掉明显情感词，用隐晦含蓄方式表达相同态度。
+要求：改写后情感极性保持为【正向】，可用反问、省略、暗示等手法，保持自然中文。
+
+原文：优点基本和大家说的差不多。样子比较好看；键盘很舒服；散热也还不错，在室温26的情况下左掌托稍微能感觉到热度，还能接受。性价比还行。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+747,1,implicit,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='b4c3d83c17b84cf9b7d8173d73aba9a7', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对中文评论进行改写，去掉明显情感词，用隐晦含蓄方式表达相同态度。情感极性保持为正向，可以用反问、省略、暗示等手法，保持自然中文。\n\n原文是：""产品不错，性价比高，就是显卡有些瓶颈。 运行比较稳定，原装未开封。""\n\n情感标签是正向。\n\n改写后，只输出一个JSON对象，格式必须",,"请对以下中文评论进行改写，去掉明显情感词，用隐晦含蓄方式表达相同态度。
+要求：改写后情感极性保持为【正向】，可用反问、省略、暗示等手法，保持自然中文。
+
+原文：产品不错，性价比高，就是显卡有些瓶颈。 运行比较稳定，原装未开封。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+820,1,implicit,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='b0cfa4c49ee44e80b6513f5e4aa370b9', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对中文评论进行改写。原文是：“抢购到的本本，性价比超高，因为自己已有本本，买个人情，让给了同事。”情感标签是正向。\n\n改写要求：\n- 去掉明显情感词。\n- 用隐晦含蓄的方式表达相同态度。\n- 保持情感极性为正向。\n- 可以使用反问、省略、暗示等手法。\n- 改写后必须是自",,"请对以下中文评论进行改写，去掉明显情感词，用隐晦含蓄方式表达相同态度。
+要求：改写后情感极性保持为【正向】，可用反问、省略、暗示等手法，保持自然中文。
+
+原文：抢购到的本本，性价比超高，因为自己已有本本，买个人情，让给了同事。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+834,1,implicit,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='e8c6b05cee9040b398cbcc8e8c459fe2', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写。原文是关于即将有宝宝，期待宝宝降临，所以提前看家教书籍，然后评价一本书。用户说这本书很好，能学到教育孩子的方法，自己收获很多。还提到犹太民族的优秀与教育有关，最后说这本书值得看和研究。\n\n要求是：\n- 去掉明显情感词。\n- 用隐晦含蓄方式表达相同态度。",,"请对以下中文评论进行改写，去掉明显情感词，用隐晦含蓄方式表达相同态度。
+要求：改写后情感极性保持为【正向】，可用反问、省略、暗示等手法，保持自然中文。
+
+原文：自己马上就有宝宝了，期待着宝宝降临人世，所以提前看看家教方面的书籍。看了这本书，真的很好。不但丛中可以学到教育孩子的方法，自己也丛中收获很多。犹太民族经历了那么多的战争、追杀、迫害还能依然存在，而且很多犹太人成了世界首富。并在其他领域取得了骄人的成绩，不可以不承认，这个种族的优秀，也不能否认这和他们从小接受的教育存在着重要的关系。这本书值得看值得仔细研究。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+835,1,implicit,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='354e77a661ef45078ef9b49ada0ab844', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写，去掉明显情感词，用隐晦含蓄的方式表达相同的态度。情感极性必须保持为正向。\n\n原文是：""外观设计别出心裁！配置均衡性价比高，比TC系列又有进步。散热很好。""\n\n情感标签是正向，所以改写后也必须是正向的，但要隐晦含蓄。\n\n改写要求：\n- 去掉明显情感",,"请对以下中文评论进行改写，去掉明显情感词，用隐晦含蓄方式表达相同态度。
+要求：改写后情感极性保持为【正向】，可用反问、省略、暗示等手法，保持自然中文。
+
+原文：外观设计别出心裁！配置均衡性价比高，比TC系列又有进步。散热很好。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+846,1,implicit,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='541c5f1f2de744db8a619d104237f210', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写。评论原文是：“令人潸然泪下的好书.太值得拥有了.当当不错,能及时改正不足,^_^,继续支持!!!”\n\n情感标签是正向，所以改写后必须保持情感极性为正向。\n\n改写要求：\n- 去掉明显情感词。\n- 用隐晦含蓄方式表达相同态度。\n- 可用反问、省略、暗",,"请对以下中文评论进行改写，去掉明显情感词，用隐晦含蓄方式表达相同态度。
+要求：改写后情感极性保持为【正向】，可用反问、省略、暗示等手法，保持自然中文。
+
+原文：令人潸然泪下的好书.太值得拥有了.当当不错,能及时改正不足,^_^,继续支持!!!
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+931,1,implicit,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='9e0017355cd146a4b4c3b33ba62ebb30', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对给定的中文评论进行改写。原文是：""还成,不错还成,不错还成,不错还成,不错,物有所值""，情感标签是正向。\n\n改写要求：\n- 去掉明显情感词。\n- 用隐晦含蓄方式表达相同态度。\n- 情感极性保持为正向。\n- 可用反问、省略、暗示等手法。\n- 保持自然中文。\n\n严格输出",,"请对以下中文评论进行改写，去掉明显情感词，用隐晦含蓄方式表达相同态度。
+要求：改写后情感极性保持为【正向】，可用反问、省略、暗示等手法，保持自然中文。
+
+原文：还成,不错还成,不错还成,不错还成,不错,物有所值
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+961,0,implicit,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='c00a2be165424db9930d065e0aab642c', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求对中文评论进行改写，去掉明显情感词，用隐晦含蓄的方式表达相同的态度。情感极性必须保持为【负向】，可以用反问、省略、暗示等手法，保持自然中文。\n\n原文是：“唉，怎么说呢，这是我住过的最差的的四星的酒店，还是贵宾楼，晕！硬件设施估计只有二星的标准。性价比太低！”\n\n情感标签是负向，",,"请对以下中文评论进行改写，去掉明显情感词，用隐晦含蓄方式表达相同态度。
+要求：改写后情感极性保持为【负向】，可用反问、省略、暗示等手法，保持自然中文。
+
+原文：唉，怎么说呢，这是我住过的最差的的四星的酒店，还是贵宾楼，晕！硬件设施估计只有二星的标准。性价比太低！
+情感标签：负向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+1014,1,implicit,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='4e368438d2d84323a6d9f2a10977b650', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对给定的中文评论进行改写。评论有三部分：\n\n1. 便宜，性价比还行\n\n2. 独立显卡\n\n3. 考虑日常应用，LP也就上网，顶多玩QQ游戏，这套配置足够。\n\n情感标签是正向。\n\n要求是：去掉明显情感词，用隐晦含蓄方式表达相同态度。情感极性保持为正向。可以使用反问、省",,"请对以下中文评论进行改写，去掉明显情感词，用隐晦含蓄方式表达相同态度。
+要求：改写后情感极性保持为【正向】，可用反问、省略、暗示等手法，保持自然中文。
+
+原文：1、便宜，性价比还行 2、独立显卡 3、考虑日常应用，LP也就上网，顶多玩QQ游戏，这套配置足够。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+1023,1,implicit,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='5af1af1be5964dfaa975000a1758f2b3', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，用户要求我对给定的中文评论进行改写。评论原文是：“惠普的这个本，主要还是在有限的预算内买一个高配置的机器。总的来说这个机器就是超高性价比。”情感标签是正向。\n\n我的任务是改写评论，去掉明显情感词，用隐晦含蓄的方式表达相同的态度。情感极性必须保持为正向。我可以使用反问、省略、暗示等手法，并确",,"请对以下中文评论进行改写，去掉明显情感词，用隐晦含蓄方式表达相同态度。
+要求：改写后情感极性保持为【正向】，可用反问、省略、暗示等手法，保持自然中文。
+
+原文：惠普的这个本，主要还是在有限的预算内买一个高配置的机器。总的来说这个机器就是超高性价比。
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"
+1112,1,implicit,ValueError,"API returned empty content. finish_reason=length. raw_response_preview: ChatCompletion(id='6bb2c1acad1345d592b33e768de00e90', choices=[Choice(finish_reason='length', index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='首先，任务是改写一个中文评论。原文是：""性价比不错 声效不错 摄像头效果不错 和中关村价格没差多少，早知道不在京东买了""。情感标签是正向。\n\n要求：去掉明显情感词，用隐晦含蓄方式表达相同态度。情感极性保持为正向。可以使用反问、省略、暗示等手法。改写后必须是自然流畅的中文。\n\n严格要求：只输出",,"请对以下中文评论进行改写，去掉明显情感词，用隐晦含蓄方式表达相同态度。
+要求：改写后情感极性保持为【正向】，可用反问、省略、暗示等手法，保持自然中文。
+
+原文：性价比不错 声效不错 摄像头效果不错 和中关村价格没差多少，早知道不在京东买了
+情感标签：正向
+
+严格要求：
+- 只输出一个JSON对象，不要输出任何其他内容
+- 不要输出解释、不要输出markdown代码块
+- 格式必须是: {""aug_text"": ""改写后的中文文本""}
+- aug_text必须是自然流畅的中文"

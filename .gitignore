@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 虚拟环境
+.venv/
+venv/
+.env
+
+# API key（绝对不能提交）
+API_key.txt
+
+# 训练日志（不上传，太大且可重新生成）
+outputs/logs/
+
+# 原始数据（从 HuggingFace 下载）
+data/raw/
+
+# HuggingFace 缓存
+.cache/
+
+# 系统文件
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 临时文件
+*.log

@@ -1,0 +1,16 @@
+{
+  "accuracy": 0.8846,
+  "precision": 0.8897,
+  "recall": 0.8857,
+  "macro_f1": 0.8843,
+  "confusion_matrix": [
+    [
+      546,
+      32
+    ],
+    [
+      104,
+      496
+    ]
+  ]
+}

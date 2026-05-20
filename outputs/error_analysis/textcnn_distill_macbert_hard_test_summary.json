@@ -1,0 +1,14 @@
+{
+  "model_name": "textcnn_distill_macbert_hard_test",
+  "total_samples": 300,
+  "error_samples": 32,
+  "accuracy": 0.8933,
+  "error_rate": 0.1067,
+  "type_distribution": {
+    "negation": 11,
+    "transition": 7,
+    "colloquial": 6,
+    "degree": 6,
+    "implicit": 2
+  }
+}

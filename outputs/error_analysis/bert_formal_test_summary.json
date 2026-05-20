@@ -1,0 +1,15 @@
+{
+  "model_name": "bert_formal_test",
+  "total_samples": 1178,
+  "error_samples": 116,
+  "accuracy": 0.9015,
+  "error_rate": 0.0985,
+  "type_distribution": {
+    "transition": 36,
+    "negation": 28,
+    "other": 24,
+    "colloquial": 14,
+    "degree": 12,
+    "implicit": 2
+  }
+}

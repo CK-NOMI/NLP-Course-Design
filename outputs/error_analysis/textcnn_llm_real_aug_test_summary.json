@@ -1,0 +1,15 @@
+{
+  "model_name": "textcnn_llm_real_aug_test",
+  "total_samples": 1178,
+  "error_samples": 89,
+  "accuracy": 0.9244,
+  "error_rate": 0.0756,
+  "type_distribution": {
+    "other": 25,
+    "negation": 25,
+    "transition": 22,
+    "degree": 9,
+    "colloquial": 6,
+    "implicit": 2
+  }
+}

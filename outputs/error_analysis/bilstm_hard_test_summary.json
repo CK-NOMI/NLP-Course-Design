@@ -1,0 +1,14 @@
+{
+  "model_name": "bilstm_hard_test",
+  "total_samples": 300,
+  "error_samples": 35,
+  "accuracy": 0.8833,
+  "error_rate": 0.1167,
+  "type_distribution": {
+    "negation": 13,
+    "colloquial": 8,
+    "degree": 8,
+    "transition": 5,
+    "implicit": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "model_name": "textcnn_llm_real_aug_distill_macbert_formal_hard_test",
+  "total_samples": 300,
+  "error_samples": 22,
+  "accuracy": 0.9267,
+  "error_rate": 0.0733,
+  "type_distribution": {
+    "negation": 9,
+    "colloquial": 6,
+    "degree": 3,
+    "transition": 2,
+    "implicit": 2
+  }
+}

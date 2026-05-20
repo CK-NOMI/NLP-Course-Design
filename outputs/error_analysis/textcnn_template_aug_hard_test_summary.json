@@ -1,0 +1,14 @@
+{
+  "model_name": "textcnn_template_aug_hard_test",
+  "total_samples": 300,
+  "error_samples": 27,
+  "accuracy": 0.91,
+  "error_rate": 0.09,
+  "type_distribution": {
+    "negation": 9,
+    "degree": 6,
+    "colloquial": 5,
+    "transition": 5,
+    "implicit": 2
+  }
+}

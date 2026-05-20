@@ -1,0 +1,36 @@
+seed: 42
+
+data:
+  train_file: data/augmented/train_llm_real_augmented.csv
+  dev_file: data/processed/dev.csv
+  test_file: data/processed/test.csv
+  teacher_logits_file: data/distillation/macbert_teacher_logits_train_llm_real_augmented.csv
+  max_len: 128
+
+teacher:
+  model_name: macbert
+  config_file: configs/macbert_formal.yaml
+  checkpoint: outputs/checkpoints/macbert_baseline_formal/best.pt
+
+student:
+  model_name: textcnn
+  config_file: configs/textcnn.yaml
+
+distillation:
+  temperature: 2.0
+  alpha: 0.5
+  ce_weight: 0.5
+  kd_weight: 0.5
+
+training:
+  batch_size: 32
+  epochs: 15
+  lr: 0.001
+  weight_decay: 0.0
+  patience: 3
+
+output:
+  checkpoint_dir: outputs/checkpoints
+  log_dir: outputs/logs
+  prediction_dir: outputs/predictions
+  metrics_dir: outputs/metrics

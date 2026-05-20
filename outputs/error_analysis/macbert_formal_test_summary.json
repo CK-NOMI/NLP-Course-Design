@@ -1,0 +1,15 @@
+{
+  "model_name": "macbert_formal_test",
+  "total_samples": 1178,
+  "error_samples": 127,
+  "accuracy": 0.8922,
+  "error_rate": 0.1078,
+  "type_distribution": {
+    "transition": 36,
+    "other": 34,
+    "negation": 29,
+    "colloquial": 14,
+    "degree": 13,
+    "implicit": 1
+  }
+}

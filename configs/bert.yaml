@@ -1,0 +1,26 @@
+seed: 42
+
+data:
+  train_file: data/processed/train.csv
+  dev_file: data/processed/dev.csv
+  test_file: data/processed/test.csv
+  max_len: 64
+
+model:
+  name: bert
+  pretrained_model_name: bert-base-chinese
+  dropout: 0.1
+  num_classes: 2
+
+training:
+  batch_size: 4
+  epochs: 3
+  lr: 0.00002
+  weight_decay: 0.01
+  patience: 2
+
+output:
+  checkpoint_dir: outputs/checkpoints
+  log_dir: outputs/logs
+  prediction_dir: outputs/predictions
+  metrics_dir: outputs/metrics

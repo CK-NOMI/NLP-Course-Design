@@ -1,0 +1,28 @@
+seed: 42
+
+data:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  augmented_dir: data/augmented
+  hard_eval_dir: data/hard_eval
+  max_len: 256
+  vocab_min_freq: 2
+
+training:
+  batch_size: 64
+  epochs: 15
+  lr: 0.001
+  weight_decay: 0.0001
+  patience: 3
+
+output:
+  checkpoint_dir: outputs/checkpoints
+  log_dir: outputs/logs
+  prediction_dir: outputs/predictions
+  metrics_dir: outputs/metrics
+  figures_dir: outputs/figures
+  error_analysis_dir: outputs/error_analysis
+
+labels:
+  - 负向
+  - 正向

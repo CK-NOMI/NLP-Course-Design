@@ -1,0 +1,36 @@
+seed: 42
+
+data:
+  train_file: data/processed/train.csv
+  dev_file: data/processed/dev.csv
+  test_file: data/processed/test.csv
+  teacher_logits_file: data/distillation/teacher_logits_train.csv
+  max_len: 128
+
+teacher:
+  model_name: bert
+  config_file: configs/bert.yaml
+  checkpoint: outputs/checkpoints/bert_gpu_smoke/best.pt
+
+student:
+  model_name: textcnn
+  config_file: configs/textcnn.yaml
+
+distillation:
+  temperature: 2.0
+  alpha: 0.5
+  ce_weight: 0.5
+  kd_weight: 0.5
+
+training:
+  batch_size: 32
+  epochs: 3
+  lr: 0.001
+  weight_decay: 0.0
+  patience: 2
+
+output:
+  checkpoint_dir: outputs/checkpoints
+  log_dir: outputs/logs
+  prediction_dir: outputs/predictions
+  metrics_dir: outputs/metrics
